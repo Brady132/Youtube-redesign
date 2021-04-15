@@ -1,0 +1,185 @@
+/* 
+    Base configurations
+    ----------------------
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root{
+    --swatch_1: #eff0f2;
+    --swatch_2: #b2b9c9;
+    --swatch_3: #11100e;
+    --swatch_4: #b4c7d8;
+    --swatch_5: #545954;
+    --swatch_6: #611311;
+    --swatch_7: #837269;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#left{
+    color: var(--swatch_3);
+    width: fit-content;
+    padding: 20px;
+    background-color: var(--swatch_1);
+}
+
+.profil{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.photo-profil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.photo-profil img{
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.mini-circle{
+    width: 8px;
+    height: 8px;
+    background-color: crimson;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.profil-info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.prg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prg1{
+    font-size: 14px;
+}
+
+.prg2{
+    font-size: 11px;
+    color: var(--swatch_2);
+}
+
+.menu{
+    border-bottom: 1px solid var(--swatch_2);
+    padding: 10px 0;
+}
+
+.menu ul{
+    list-style-type: none;
+}
+
+.menu li{
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--swatch_3);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.menu1{
+    border-top: 1px solid var(--swatch_2);
+}
+
+.sp-red{
+    font-weight: bold;
+    color: crimson;
+}
+
+.menu3{
+    border: none;
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 45px;
+	height: 18px;
+	background: crimson;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: -4px;
+	left: -1px;
+	width: 25px;
+	height: 25px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: gray;
+}
+
+input:checked + label:after {
+	left: calc(100% - 0px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 130px;
+}
+
+.footer-left{
+    font-weight: bold;
+}
+
+.check p{
+    padding-top: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.check-ft{
+    padding-top: 250px;
+}
+
+.check-prg1{
+    padding-bottom: 50px;
+    font-size: 15px;
+}
+
+.check-prg2{
+    color: var(--swatch_2);
+    font-size: 13px;
+}
