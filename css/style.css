@@ -32,6 +32,7 @@ body{
     width: fit-content;
     padding: 20px;
     background-color: var(--swatch_1);
+    float: left;
 }
 
 .profil{
@@ -182,4 +183,93 @@ label:active:after {
 .check-prg2{
     color: var(--swatch_2);
     font-size: 13px;
+}
+
+/* Partie centrale */
+.header{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--swatch_4);
+}
+
+.bar-form{
+    margin: 0 auto;
+    display: flex;
+    padding: 3px 8px 3px 16px;
+    border: 1px solid var(--swatch_2);
+    border-radius: 50px;
+}
+
+.bar-form input{
+    width: 300px;
+    border: none;
+    outline: none;
+}
+
+.bar-form input::-webkit-input-placeholder{
+    font-style: italic;
+}
+
+.icons{
+    margin-right: 20px;
+}
+
+.icons a{
+    padding: 0px 10px;
+}
+
+.container{
+    display: flex;
+}
+
+.content{
+    display: flex;
+    border-bottom: 1px solid var(--swatch_4);
+    margin: 30px;
+}
+
+.part1{
+    padding-top: 25px;
+    padding-right: 10px;
+    width: 450px;
+}
+
+.part1 p{
+    padding: 10px 0px;
+    font-size: 14px;
+}
+
+.part1-boxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.part-box{
+    padding: 0px 10px;
+}
+
+.part-box img{
+    width: 150px;
+    height: 100px;
+}
+
+.part2{
+    width: 400px;
+}
+
+.part2 img{
+    width: 400px;
+}
+
+.right{
+    border-left: 1px solid var(--swatch_4);
+    padding: 20px;
+}
+
+.right-part1 img{
+    width: 300px;
+    height: 150px;
 }

@@ -7,58 +7,135 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <!-- PARTIE DE GAUCHE-->
         <div id="left">
+            <a href="#"><img src="img/logos/logo-youtube.png" alt="logo-youtube" width="100"></a>
+            <div class="profil">
+                <div class="photo-profil">
+                    <img src="img/users/me.jpeg" alt="me">
+                    <div class="mini-circle"></div>
+                    <p class="prg1">Nannie Nelson</p>
+                    <p class="prg2">Montreal, QC</p>
+                </div>
+                <div class="profil-info">
+                    <div class="prg">
+                        <p class="prg1">278</p>
+                        <p class="prg2">VIDEOS</p>
+                    </div>
+                    <div class="prg">
+                        <p class="prg1">36.5K</p>
+                        <p class="prg2">SUBSCRIBERS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu menu1">
+                <ul>
+                    <li><img src="img/chevron_right_black_24dp.svg" alt="chevron_right_black"><a href="#">Videos</a></li>
+                    <li><img src="img/chevron_right_black_24dp.svg" alt="chevron_right_black"><a href="#">Movies & Shows</a></li>
+                    <li><img src="img/chevron_right_black_24dp.svg" alt="chevron_right_black"><a href="#">Premium Contents</a></li>
+                    <li><img src="img/chevron_right_black_24dp.svg" alt="chevron_right_black"><a href="#">Live</a></li>
+                </ul>
+            </div>
+            <div class="menu menu2">
+                <ul>
+                    <li><img src="img/chevron_right_black_24dp.svg" alt="chevron_right_black"><a href="#">Subscribtions <span class="sp-red">29 new</span></a></li>
+                    <li><img src="img/chevron_right_black_24dp.svg" alt="chevron_right_black"><a href="#">Library</a></li>
+                    <li><img src="img/chevron_right_black_24dp.svg" alt="chevron_right_black"><a href="#">Liked Videos</a></li>
+                    <li><img src="img/chevron_right_black_24dp.svg" alt="chevron_right_black"><a href="#">Watch Later</a></li>
+                </ul>
+            </div>                
+            <div class="menu menu3">
+                <ul>
+                    <li><img src="img/chevron_right_black_24dp.svg" alt="chevron_right_black"><a href="#">Setting</a></li>
+                    <li><img src="img/chevron_right_black_24dp.svg" alt="chevron_right_black"><a href="#">Help & Report</a></li>
+                </ul>
+            </div>
+            <div class="footer-left">
+                <div class="check">
+                    <input type="checkbox" id="switch"/>
+                    <label for="switch">Toggle</label>
+                    <p>Light On</p>
+                </div>
+                <div class="check-ft">
+                    <p class="check-prg1">Logout</p>
+                    <p class="check-prg2">&copy; 2018 Youtube, LLC</p>
+                </div>
+            </div>
+        </div><!-- FIN PARTIE GAUCHE -->
+
+        <!-- PARTIE CENTRALE-->
+        <div class="header">
+            <div class="bar-form">
+                <form>
+                    <input type="search" name="search" placeholder="Search videos, stars or authors...">
+                </form>
+                <a href="#"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDMwLjIzOSAzMC4yMzkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPHBhdGggZD0iTTIwLjE5NCwzLjQ2Yy00LjYxMy00LjYxMy0xMi4xMjEtNC42MTMtMTYuNzM0LDBjLTQuNjEyLDQuNjE0LTQuNjEyLDEyLjEyMSwwLDE2LjczNSAgIGM0LjEwOCw0LjEwNywxMC41MDYsNC41NDcsMTUuMTE2LDEuMzRjMC4wOTcsMC40NTksMC4zMTksMC44OTcsMC42NzYsMS4yNTRsNi43MTgsNi43MThjMC45NzksMC45NzcsMi41NjEsMC45NzcsMy41MzUsMCAgIGMwLjk3OC0wLjk3OCwwLjk3OC0yLjU2LDAtMy41MzVsLTYuNzE4LTYuNzJjLTAuMzU1LTAuMzU0LTAuNzk0LTAuNTc3LTEuMjUzLTAuNjc0QzI0Ljc0MywxMy45NjcsMjQuMzAzLDcuNTcsMjAuMTk0LDMuNDZ6ICAgIE0xOC4wNzMsMTguMDc0Yy0zLjQ0NCwzLjQ0NC05LjA0OSwzLjQ0NC0xMi40OTIsMGMtMy40NDItMy40NDQtMy40NDItOS4wNDgsMC0xMi40OTJjMy40NDMtMy40NDMsOS4wNDgtMy40NDMsMTIuNDkyLDAgICBDMjEuNTE3LDkuMDI2LDIxLjUxNywxNC42MywxOC4wNzMsMTguMDc0eiIgZmlsbD0iI2I0YzdkOCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=" width="15" height="15"/></a>
+            </div>
+            <div class="icons">
+                <a href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <title>plus-circle</title>
+                    <path d="M23 12c0-3.037-1.232-5.789-3.222-7.778s-4.741-3.222-7.778-3.222-5.789 1.232-7.778 3.222-3.222 4.741-3.222 7.778 1.232 5.789 3.222 7.778 4.741 3.222 7.778 3.222 5.789-1.232 7.778-3.222 3.222-4.741 3.222-7.778zM21 12c0 2.486-1.006 4.734-2.636 6.364s-3.878 2.636-6.364 2.636-4.734-1.006-6.364-2.636-2.636-3.878-2.636-6.364 1.006-4.734 2.636-6.364 3.878-2.636 6.364-2.636 4.734 1.006 6.364 2.636 2.636 3.878 2.636 6.364zM8 13h3v3c0 0.552 0.448 1 1 1s1-0.448 1-1v-3h3c0.552 0 1-0.448 1-1s-0.448-1-1-1h-3v-3c0-0.552-0.448-1-1-1s-1 0.448-1 1v3h-3c-0.552 0-1 0.448-1 1s0.448 1 1 1z"></path>
+                </svg></a>
+                <a href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <title>twitch</title>
+                    <path d="M20 3v10.586l-3.414 3.414h-4.586c-0.256 0-0.512 0.098-0.707 0.293l-2.293 2.293v-1.586c0-0.552-0.448-1-1-1h-4v-14zM21 1h-18c-0.552 0-1 0.448-1 1v16c0 0.552 0.448 1 1 1h4v3c0 0.552 0.448 1 1 1 0.276 0 0.526-0.112 0.707-0.293l3.707-3.707h4.586c0.276 0 0.526-0.112 0.707-0.293l4-4c0.195-0.195 0.293-0.451 0.293-0.707v-12c0-0.552-0.448-1-1-1zM12 11v-4c0-0.552-0.448-1-1-1s-1 0.448-1 1v4c0 0.552 0.448 1 1 1s1-0.448 1-1zM17 11v-4c0-0.552-0.448-1-1-1s-1 0.448-1 1v4c0 0.552 0.448 1 1 1s1-0.448 1-1z"></path>
+                </svg></a>
+                <a href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <title>archive</title>
+                    <path d="M4 9h16v11h-16zM1 2c-0.552 0-1 0.448-1 1v5c0 0.552 0.448 1 1 1h1v12c0 0.552 0.448 1 1 1h18c0.552 0 1-0.448 1-1v-12h1c0.552 0 1-0.448 1-1v-5c0-0.552-0.448-1-1-1zM2 4h20v3h-20zM10 13h4c0.552 0 1-0.448 1-1s-0.448-1-1-1h-4c-0.552 0-1 0.448-1 1s0.448 1 1 1z"></path>
+                </svg></a>
+            </div>
+        </div>
+        <div class="section">
             <div class="container">
-                <a href="#"><img src="img/logos/logo-youtube.png" alt="logo-youtube" width="100"></a>
-                <div class="profil">
-                    <div class="photo-profil">
-                        <img src="img/users/me.jpeg" alt="me">
-                        <div class="mini-circle"></div>
-                        <p class="prg1">Nannie Nelson</p>
-                        <p class="prg2">Montreal, QC</p>
-                    </div>
-                    <div class="profil-info">
-                        <div class="prg">
-                            <p class="prg1">278</p>
-                            <p class="prg2">VIDEOS</p>
+                <div class="content">
+                    <div class="content-part part1">
+                        <h4>Weekly Featured</h4>
+                        <h2>Hello, Summer Vacation!</h2>
+                        <p>School is just around the corner, so finish off summer break with a bang.
+                            A last-minute family vacation will give the kids stories to share when
+                            they return to school and memories to last a lifetime.
+                        </p>
+                        <div class="part1-boxes">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z"/>
+                            </svg></a>
+                            <div class="part-box">
+                                <img src="img/illustrations/selfie.jpg" alt="selfie">
+                                <h5 class="prg2">Micheal Adams</h5>
+                                <p class="prg1">Day in my life: Summer...</p>
+                                <p class="prg2">VIEWS 28.6K <span>6DS AGO</span></p>
+                            </div>
+                            <div class="part-box">
+                                <img src="img/illustrations/plage.jpg" alt="plage">
+                                <h5 class="prg2">Dollie Cross</h5>
+                                <p class="prg1">Day at the Beach! Sum...</p>
+                                <p class="prg2">VIEWS 26.7K <span>10DS AGO</span></p>
+                            </div>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
+                            </svg></a>
                         </div>
-                        <div class="prg">
-                            <p class="prg1">36.5K</p>
-                            <p class="prg2">SUBSCRIBERS</p>
-                        </div>
+                    </div>
+                    <div class="content-part part2">
+                        <img src="img/illustrations/kayak.jpg" alt="kayak">
+                        <h5 class="prg2">Warren Munoz</h5>
+                        <p class="prg1">Lake House Vacation! Boating, Tubing & More!</p>
+                        <p class="prg2">Hope you guys enjoyed seeing what I do up north! I'm going to try and
+                            get more footage of the really fun stuff we do up north next time, but be
+                            sure to like and subscribes:)
+                        </p>
+                        <p class="prg2">VIEWS 29.2K <span>LIKES 1.6K</span> <span>3DS AGO</span></p>
                     </div>
                 </div>
-                <div class="menu menu1">
-                    <ul>
-                        <li><img src="img/chevron_right_black_24dp.svg" alt="chevron_right_black"><a href="#">Videos</a></li>
-                        <li><img src="img/chevron_right_black_24dp.svg" alt="chevron_right_black"><a href="#">Movies & Shows</a></li>
-                        <li><img src="img/chevron_right_black_24dp.svg" alt="chevron_right_black"><a href="#">Premium Contents</a></li>
-                        <li><img src="img/chevron_right_black_24dp.svg" alt="chevron_right_black"><a href="#">Live</a></li>
-                    </ul>
-                </div>
-                <div class="menu menu2">
-                    <ul>
-                        <li><img src="img/chevron_right_black_24dp.svg" alt="chevron_right_black"><a href="#">Subscribtions <span class="sp-red">29 new</span></a></li>
-                        <li><img src="img/chevron_right_black_24dp.svg" alt="chevron_right_black"><a href="#">Library</a></li>
-                        <li><img src="img/chevron_right_black_24dp.svg" alt="chevron_right_black"><a href="#">Liked Videos</a></li>
-                        <li><img src="img/chevron_right_black_24dp.svg" alt="chevron_right_black"><a href="#">Watch Later</a></li>
-                    </ul>
-                </div>                
-                <div class="menu menu3">
-                    <ul>
-                        <li><img src="img/chevron_right_black_24dp.svg" alt="chevron_right_black"><a href="#">Setting</a></li>
-                        <li><img src="img/chevron_right_black_24dp.svg" alt="chevron_right_black"><a href="#">Help & Report</a></li>
-                    </ul>
-                </div>
-                <div class="footer-left">
-                    <div class="check">
-                        <input type="checkbox" id="switch"/>
-                        <label for="switch">Toggle</label>
-                        <p>Light On</p>
-                    </div>
-                    <div class="check-ft">
-                        <p class="check-prg1">Logout</p>
-                        <p class="check-prg2">&copy; 2018 Youtube, LLC</p>
+                <div class="right">
+                    <div class="right-part1">
+                        <h3>Live <span>Show More</span></h3>
+                        <img src="img/illustrations/live-road-trip.jpg" alt="live-road-trip">
+                        <h5 class="prg2">Gary Hampton</h5>
+                        <p class="prg1">The best trip with my girlfriend in Maxico</p>
+                        <p class="prg2">Had the greatest time in Mexico with my girlfriend.
+                            Get a peek into our adventure, outfits, and memories.
+                        </p>
+                        <p class="prg2">VIEWS 6.8K <span>COMMENTS 5.8K</span></p>
                     </div>
                 </div>
             </div>
